@@ -18,7 +18,7 @@
 # window.exitonclick()
 
 
-n =int(input("Введите чило:"))
+n = int(input("Введите чило:"))
 b = input("Введите знак (* или /):")
 m = n * 1024
 print(m) 
