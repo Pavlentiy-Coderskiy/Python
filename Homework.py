@@ -2,7 +2,6 @@
 # window = turtle.Screen() 
 # turtle.reset()
 
-
 # turtle.shape("triangle")
 # turtle.bgcolor("black")
 # turtle.color("#36c9b9")
