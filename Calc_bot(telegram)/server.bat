@@ -1,3 +1,3 @@
 @echo off 
 
-C:\Python\TG\bot.py
+"C:\Python\Calc_bot(telegram)\bot.py"
