@@ -11,16 +11,16 @@ screensize(500, 300)
 
 class Star_edit:
     
-    def star(self, spd, lft, frw, righ, lft2, n, *args):
-        speed(spd)                #1
-        left(lft)              #60
+    def star(self, speed, first_left, forward, first_right, second_left, number_of_peaks, *args):
+        speed(speed)                #1
+        left(first_left)              #60
         begin_fill()
 
-        for i in range(n):
-            forw(frw)
-            ri(righ)
-            forw(frw)
-            le(lft2)
+        for i in range(number_of_peaks):
+            forw(forward)
+            ri(first_right)
+            forw(forward)
+            le(second_left)
         color("#eaeaea")
         end_fill()
         try:
@@ -62,7 +62,7 @@ elif num == 6:
     star_edit.star(3, 20, 100, 40, 100, 6), done()
 
 elif num == 7:
-    star_edit.star(4, 20, 100,49, 100, 7, 95, 7, 90, 10), done()
+    star_edit.star(4, 20, 100, 49, 100, 7, 95, 7, 90, 10), done()
 
 elif num == 8: 
     star_edit.star(5, 0, 100, 55, 100, 8), done()

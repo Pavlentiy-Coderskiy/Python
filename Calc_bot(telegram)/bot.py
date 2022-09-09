@@ -5,7 +5,7 @@ from random import choice
 import config
 print("Бот работает") 
 
-bot = telebot.TeleBot(config.TOKEN, skip_pending=True) # Токен бота
+bot = telebot.TeleBot(config.TOKEN, skip_pending = True) # Токен бота
 
 # Списки для вариативности ошибок 
 list1 = ["А?","Чего?","Что?", "Не понял"] 
@@ -20,7 +20,7 @@ list4 = ["Перечитай что нужно сделать", "Похоже т
 # Кнопочки 
 @bot.message_handler(commands=["start"])
 def start(message):
-	markup = types.InlineKeyboardMarkup(row_width=2) 
+	markup = types.InlineKeyboardMarkup(row_width = 2) 
 	item_sum = types.InlineKeyboardButton("Сумма(+)", callback_data="Sum") 
 	item_minus = types.InlineKeyboardButton("Разность(-)", callback_data="Minus") 
 	item_division = types.InlineKeyboardButton("Деление(/)", callback_data="Divisoin") 
